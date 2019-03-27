@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="instagram_faceBook_story_try" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xlo-ZS-u3S">
+                                <rect key="frame" x="107.5" y="127" width="160" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="fxt-fJ-jJc"/>
+                                    <constraint firstAttribute="height" constant="80" id="y2t-yh-wyh"/>
+                                </constraints>
+                                <state key="normal" title="Check URLScheme"/>
+                                <connections>
+                                    <action selector="didTapURLScheme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZf-yj-Sfw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAG-I8-Ilm">
+                                <rect key="frame" x="57.5" y="227" width="260" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="78e-ya-G6P"/>
+                                    <constraint firstAttribute="height" constant="80" id="7lG-dH-qrm"/>
+                                </constraints>
+                                <state key="normal" title="Share Instagram Shceme(パス渡し)"/>
+                                <connections>
+                                    <action selector="didTapInstagramSchemeWithPath:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A9q-xq-9jo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4p-Jy-fbJ">
+                                <rect key="frame" x="57.5" y="327" width="260" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="WB3-tU-bHW"/>
+                                    <constraint firstAttribute="height" constant="80" id="c8i-xp-CyV"/>
+                                </constraints>
+                                <state key="normal" title="Share Instagram Shceme (コピペ)"/>
+                                <connections>
+                                    <action selector="didTapInstagramSchemeWithCopy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIj-v2-Uey"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xlo-ZS-u3S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="0Rf-qf-M8T"/>
+                            <constraint firstItem="Xlo-ZS-u3S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DBY-PW-x5a"/>
+                            <constraint firstItem="f4p-Jy-fbJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DJT-bk-Fyf"/>
+                            <constraint firstItem="IAG-I8-Ilm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KiE-1u-IC4"/>
+                            <constraint firstItem="f4p-Jy-fbJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.1" id="SUR-q6-Fqr"/>
+                            <constraint firstItem="IAG-I8-Ilm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" id="X0z-Yo-BAu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
